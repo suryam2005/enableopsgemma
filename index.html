@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EnableOps Chat</title>
+</head>
+<body>
+  <h2>Ask EnableOps AI</h2>
+  <textarea id="prompt" rows="4" cols="50"></textarea><br>
+  <button onclick="ask()">Send</button>
+  <p><strong>Response:</strong> <span id="response"></span></p>
+
+  <script>
+    async function ask() {
+      const prompt = document.getElementById("prompt").value;
+      const responseElement = document.getElementById("response");
+
+      const res = await fetch("https://your-api-url/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ text: prompt })
+      });
+
+      const data = await res.json();
+      responseElement.textContent = data.response;
+    }
+  </script>
+</body>
+</html>
