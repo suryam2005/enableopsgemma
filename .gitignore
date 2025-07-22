@@ -1,0 +1,38 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env
+
+# Mac system files
+.DS_Store
+
+# Hugging Face cache (optional)
+~/.cache/huggingface/
+
+# VSCode settings (optional)
+.vscode/
+
+# Logs
+*.log
+
+# Python egg
+*.egg-info/
+*.egg
+
+# Deployment
+*.sqlite3
+*.db
+
+# Test output
+htmlcov/
+coverage.xml
+*.cover
+
+# Node/npm if you ever add frontend
+node_modules/
+dist/
+build/
