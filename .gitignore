@@ -36,3 +36,20 @@ coverage.xml
 node_modules/
 dist/
 build/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+
+# Environment variables
+.env
+
+# VS Code settings
+.vscode/
+
+# macOS system files
+.DS_Store
